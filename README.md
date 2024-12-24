@@ -47,7 +47,7 @@ This tool is highly customizable, with adjustable detection rules and thresholds
 ## Requirements
 
 - **Python 3**: Ensure you have Python 3 or later installed.
-- **Scapy Library**: This tool requires Scapy for network packet crafting.
+- **Scapy Library**: This tool requires Scapy for network packet capturing.
 
 
 ---
@@ -89,6 +89,7 @@ This tool is highly customizable, with adjustable detection rules and thresholds
 - Ensure the `password_hash.txt` file is properly secured to prevent unauthorized access.
 - Regularly update the attack detection patterns and thresholds in the `signature_rules.json` file to address new types of threats.
 - Avoid running the system with elevated privileges unless absolutely necessary.
+- The dataset used for attack detection is **synthetic** and **based on assumptions** for educational purposes. It utilizes very common attack patterns, which may lead to an increased chance of generating false positives. As such, it is not suitable for real-world production environments. Regular updates to the dataset and detection rules are recommended. Always validate detection with actual data.
 ---
 
 ## Troubleshooting
@@ -113,7 +114,7 @@ Please ensure your code adheres to the project’s style and passes all tests be
 
 ## Legal Disclaimer
 
-NETSHIELD IDS is designed for educational and ethical purposes only. The developers are not responsible for any misuse or illegal activities conducted using this software. Ensure you have appropriate authorization before using this tool on any network.
+**NETSHIELD IDS** is designed for **educational** and **ethical** purposes only. The developers are not responsible for any misuse or illegal activities conducted using this software. Ensure you have appropriate authorization before using this tool on any network.
 
 ---
 
@@ -125,14 +126,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgements
 
-- **Scapy**: For providing powerful functionality for packet crafting and sending.
+- **Scapy**: For providing powerful functionality for packet capturing.
 - **Python 3.x**: For the simplicity and flexibility it offers for network programming.
 
 ---
 
 ## Conclusion
 
-NETSHIELD IDS provides an essential tool for monitoring and protecting networks from a wide range of attacks. Its real-time detection capabilities, customizable rules, and logging features make it a valuable tool for security professionals and network administrators.
+**NETSHIELD IDS** provides an essential tool for monitoring and protecting networks from a wide range of attacks. Its real-time detection capabilities, customizable rules, and logging features make it a valuable tool for security professionals and network administrators.
 
 ---
 
