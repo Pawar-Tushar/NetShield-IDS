@@ -1,0 +1,67 @@
+{
+    "sql_injection_patterns": [
+      "'.*OR.*=.*--",
+      "'.*'='.*'",
+      "'.*;.*--",
+      "'.*--",
+      "SELECT.*FROM.*",
+      "DROP.*TABLE.*",
+      "INSERT.*INTO.*",
+      "UNION.*SELECT.*FROM.*",
+      "EXEC.*(.*)*/.*--",
+      "AND.*1=1"
+    ],
+    "login_patterns": {
+      "http": [
+        "POST\\s+/login",
+        "username=.+&password=.+",
+        "login failed",
+        "incorrect password",
+        "access denied"
+      ],
+      "ssh": [
+        "Failed\\s+password",
+        "sshd",
+        "authentication failure"
+      ]
+    },
+    "failed_login_threshold": 2,
+    "block_time": 3,
+    "dos_attack_threshold": 100,
+    "port_scan_threshold": 10,
+    "dos_time_window": 1,
+    "xss_patterns": [
+    "<script.*?>.*?</script>",
+    "javascript:.*?",
+    "onerror=.*?",
+    "onload=.*?",
+    "<img.*?src=.*?onerror=.*?>",
+    "<.*?document.cookie.*?>",
+    "alert\\(.*?\\)",
+    "<.*?eval\\(.*?\\).*?>",
+    ".*?\"\\s*\\+\\s*\".*?script.*?\"",
+    "<.*?alert\\(.*?\\).*?>"
+  ],
+
+  "malware_patterns": [
+    ".*?\\.exe$",
+    ".*?\\.dll$",
+    ".*?\\.js$",
+    ".*?\\.vbs$",
+    ".*?\\.bat$",
+    ".*?\\.pif$",
+    ".*?\\.cmd$",
+    ".*?\\.scr$",
+    ".*?\\.(zip|rar|tar|gzip|7z|iso)$",
+    ".*?base64.*?pdf",
+    ".*?cmd.exe",
+    ".*?powershell.exe",
+    ".*?nc.exe",
+    ".*?telnet"
+  ],
+  "arp_spoofing_detection": {
+    "threshold": 3, 
+    "time_window": 10  
+  }
+  }
+  
