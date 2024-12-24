@@ -7,7 +7,10 @@ from src.config import load_signature_rules
 from src.logging_new import attack_logger
 from urllib.parse import unquote
 from collections import defaultdict
-
+/**
+ *
+ * @author Tushar
+ */
 rules = load_signature_rules("config/signature_rules.json")
 
 sql_injection_patterns = rules["sql_injection_patterns"]
